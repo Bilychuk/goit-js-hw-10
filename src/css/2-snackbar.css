@@ -86,7 +86,7 @@ label {
   color: #2e2f42;
 }
 
-button {
+button[type='submit'] {
   cursor: pointer;
   font-family: inherit;
   border: none;
@@ -105,10 +105,6 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:hover {
+button[type='submit']:hover {
   background-color: #6c8cff;
-}
-
-.iziToast > .iziToast-body .iziToast-icon {
-  color: #fff;
 }

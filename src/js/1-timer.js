@@ -19,6 +19,9 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
     onClose(selectedDates) {
+        if (!input.value) {
+            return;
+        }
         userSelectedDate = new Date(selectedDates[0]);
         if (userSelectedDate < new Date()) {
             iziToast.error({

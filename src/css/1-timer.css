@@ -1,6 +1,3 @@
-section {
-  margin-bottom: 16px;
-}
 #datetime-picker {
   width: 272px;
   height: 40px;
@@ -54,12 +51,11 @@ button[data-start] {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-button:hover,
-button:focus {
+button[data-start]:not([disabled]):hover {
   background-color: #6c8cff;
 }
 
-button:disabled {
+button[data-start]:disabled {
   background-color: #cfcfcf;
   color: #989898;
 }
