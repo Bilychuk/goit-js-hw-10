@@ -2,7 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-import ErrorIcon from "../img/icon.svg";
+import ErrorIcon from "../img/x-octagon.svg";
 
 let userSelectedDate;
 let timerInterval;
@@ -29,6 +29,7 @@ const options = {
                 iconUrl: ErrorIcon,
                 iconColor: '#fff',
                 titleColor: '#fff',
+                theme: 'dark',
                 message: 'Please choose a date in the future',
                 backgroundColor: '#ef4040',
                 messageColor: '#fff',
