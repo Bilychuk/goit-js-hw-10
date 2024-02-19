@@ -25,6 +25,7 @@ const options = {
                 timeout: 100000,
                 title: 'Error',
                 iconUrl: ErrorIcon,
+                iconColor: '#fff',
                 titleColor: '#fff',
                 message: 'Please choose a date in the future',
                 backgroundColor: '#ef4040',
