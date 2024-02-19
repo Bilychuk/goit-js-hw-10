@@ -22,7 +22,6 @@ const options = {
         userSelectedDate = new Date(selectedDates[0]);
         if (userSelectedDate < new Date()) {
             iziToast.error({
-                timeout: 100000,
                 title: 'Error',
                 iconUrl: ErrorIcon,
                 iconColor: '#fff',
