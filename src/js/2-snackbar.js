@@ -10,7 +10,8 @@ form.addEventListener('submit', promiseCreation);
 
 function promiseCreation(event) {
     event.preventDefault();
-    const delay = form.elements.delay.value.trim();
+    const delay = Number(form.elements.delay.value.trim());
+    console.log(delay)
     const state = document.querySelector('input[name="state"]:checked');
     if (!delay || !state) {
         iziToast.warning({
@@ -50,7 +51,6 @@ function promiseCreation(event) {
             position: 'topRight',
             progressBarColor: '#326101',
             message: `Fulfilled promise in ${delay}ms`,
-            timeout: delay,
         });
     })
         .catch(error => {
@@ -65,7 +65,6 @@ function promiseCreation(event) {
             position: 'topRight',
             progressBarColor: '#b51b1b',
             message: `Rejected promise in ${delay}ms`,
-            timeout: delay
          });
         })
     form.reset();
